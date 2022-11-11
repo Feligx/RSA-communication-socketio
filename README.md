@@ -1,11 +1,19 @@
 # RSA-communication-socketio
 This is a RSA Communicatio implementation using websockets from Socketio in python without any UI.
 
-To run this code:
+## Specs:
+* Keys of 2048 bits for both Encryption and Signature.
+* ECB encryption mode (Although this could be improved).
+* Supports `n` length of message as input.
+* Fast Encpryption and Decryption.
+* Implemented as websockets, could be easily changed for a web application usage, or for remote comms with a dedicated server and domain.
+* Supports as many users as needed, but comms are 1-1 private.
+
+## Running the code:
 First of all download/clone the repository on your desired directory, then you have to install some dependencies if you dont have them:
 
 ```Batchfile
-  pip install "python-socketio" && pip install "python-socketio[client]" && pip install "gunicorn"
+  pip install "python-socketio" "python-socketio[client]" "gunicorn"
 ```
 
 * Server:
