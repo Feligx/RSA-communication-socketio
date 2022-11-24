@@ -28,8 +28,10 @@ First of all download/clone the repository on your desired directory, then you h
 * Client:
   Now to run the client, on a different command line, go to the client folder and run 
   ```Batchfile
-    python3 main.py <public_key> <username>
+    python3 main.py <username>
   ```
-  > Note: Sometimes python3 commando will not be avialable on your machine, check if `py`, `python`or `py3`are available if none of them are, then check if you have a python distribution installed and if you have check that the PATH of the distribution is correct.
+  > Note: Sometimes python3 command will not be avialable on your machine, check if `py`, `python`or `py3`are available if none of them are, then check if you have a python distribution installed and if you have check that the PATH of the distribution is correct.
   
   This will start a new client on the chat, if you want two or more just open more command lines and run the same command with different usernames.
+  
+  > Note that there is also an available docker environment version either [here](https://hub.docker.com/r/dleyvacastro/rsasocketio) or from ```docker pull dleyvacastro/rsasocketio```. When downloaded you can run: `docker run -d -t --name rsasocketio dleyvacastro/rsasocketio` to create the container and then use `docker exec -it rsasocketio` to get the instance running, from there you will be able to run the proyect with the commands described above.
